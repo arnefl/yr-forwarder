@@ -24,11 +24,7 @@ $place = $json['geonames'][0]['name'];
 // Construct YR url
 $url = "https://www.yr.no/place/$country/$county/$municipality/$place/?spr=eng";
 
-// Forward user to YR weather service
-//header("Location: $url");
-
 // Forward user to YR
-include_once('libraries/analyticstracking.php');
 echo '<script>window.location.replace("'.$url.'");</script>';
 
 ?>
